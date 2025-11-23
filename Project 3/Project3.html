@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8bc6ec;
+            background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 400px;
+            height: 610px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .amtbox{
+            width: 80%;
+            height: 10%;
+            background-color: #8bc6ec;
+            background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .leftbox{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .imgbox img{
+            height: 2.3rem;
+            width: 2.3rem;
+        }
+
+        #paybutton{
+            width: 80%;
+            height: 9%;
+            background-color: darkblue;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        #Cancelbox a{
+            text-decoration: none;
+            color: rgb(46, 43, 43);
+            font-weight: bold;
+            font-size: large;
+        }
+
+        @media (max-width:280px){
+            .amtbox{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <img src="AI.jpeg">
+
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem doloremque incidunt excepturi molestiae commodi laudantium molestias magni porro animi explicabo.</p>
+            </div>
+
+            <div class="amtbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="music.jpeg">
+                    </div>
+
+                    <div class="textamtbox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+
+            <button id="paybutton">
+                Proceed to Payment
+            </button>
+
+            <div id="Cancelbox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

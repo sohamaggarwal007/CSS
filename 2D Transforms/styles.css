@@ -1,0 +1,36 @@
+.box{
+    width: 350px;
+    height: 350px;
+    background-color: beige;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 2s linear;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    /* transform: rotate(45deg); Rotation Clockwise */
+    /* transform: scale(2); Size Increases */
+    /* transform: scale(2); Size Decreases */
+    /* transform: rotate(-45deg); Rotation Anticlockwise */
+    /* transform: skew(45deg); Tilt Clockwise */
+    /* transform: skew(-45deg); Tilt Anticlockwise */
+    
+    /*translate(along x-axis, along y-axis) */
+    transform: translate(500px, 500px); /* Movement */
+}
+
+p{
+    font-size: 36px;
+}

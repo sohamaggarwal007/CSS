@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container { /*Flex Container*/
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex; /*By default, flex direction is row*/
+            flex-direction: row;
+            height: 800px;
+            
+            /* align-content: start; Aligns the flex lines to the start of the container*/
+            align-content: center;/* Aligns the flex lines to the center of the container*/
+            
+            /* align-items: center; Aligns items vertically in the center*/
+            align-items: start;/* Aligns items to the start of the container*/
+            /* align-items: end; Aligns items to the end of the container*/
+            /* align-items: stretch; Stretches items to fill the container vertically*/
+
+            /* justify-content: center; Aligns items horizontally in the center*/
+            /* justify-content: space-evenly; Distributes items evenly with equal space around them*/
+            /* justify-content: space-between; Distributes items evenly with space between them*/
+            /* justify-content: space-around; Distributes items evenly with space around them*/
+            justify-content: start;/* Aligns items to the start of the container*/
+            /* justify-content: end; Aligns items to the end of the container*/
+            
+            /* flex-direction: column; The flex direction becomes column*/
+            /* flex-direction: row-reverse; The flex direction is row but reversed*/
+            /* flex-direction: column-reverse; The flex direction is column but reversed*/
+            
+            /* flex-wrap: wrap; Items will wrap to the next line when they exceed the container width*/
+            /* flex-wrap: nowrap; Items will stay in a single line and overflow the container*/
+            /* flex-wrap: wrap-reverse; Items will wrap to the next line in reverse order*/
+        }
+
+        .box {
+            /* width: 200px;
+            height: 200px; */
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        /*Flex Items*/
+        #box1{
+            background-color: aqua;
+            /* order: 500; Changes the order of the item*/
+            /* flex-shrink: 4; Allows the item to shrink more than others when space is limited*/
+            /* flex-grow: 1; Allows the item to grow more than others when space is available*/
+            align-self: center; /* Overrides the align-items property for this specific item to center it vertically*/
+            /* align-self: end; Overrides the align-items property for this specific item to align it to the end*/
+            /* align-self: start; Overrides the align-items property for this specific item to align it to the start*/
+        }
+
+        #box2{
+            background-color: blue;
+            /* flex-grow: 1; */
+        }
+
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+
+        #box4{
+            background-color: brown;
+            /* order: -1; Changes the order of the item*/
+            /* flex-grow: 1; */
+            /* flex-basis: 400px; Sets the initial size of the item before growing or shrinking*/
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+    </div>
+
+</body>
+</html>

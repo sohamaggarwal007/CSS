@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        
+        img{
+            margin: 10px;
+        }
+
+        /* .image2{
+            /* position: relative;
+            top: 100px; /* On static elements, top, bottom, left, right do not work
+            left: 100px; */
+
+            /* position: absolute; /* Gap is not mantained
+            top: 100px; 
+        } */
+
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: aqua;
+        }
+
+        .image4{
+            position: fixed;/*Image is fixed in the whole window*/
+        }
+
+        .image3{
+            position: sticky;/*The image stays sticky till it is in the parent container*/
+            top: 100px;
+        }
+
+        .box{
+            background-color: crimson;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="container">
+
+    <img class="image1" src="Photo.png" alt="poster 1" width="300px" height="300px">
+
+    <img class="image2" src="Photo.png" alt="poster 2" width="300px" height="300px">
+
+    <img class="image3" src="Photo.png" alt="poster 3" width="300px" height="300px">
+
+    <img class="image4" src="Photo.png" alt="poster 1" width="300px" height="300px">
+
+   </div>
+
+   <div class="box">
+
+   </div>
+
+</body>
+</html>

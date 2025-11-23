@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+
+    <style>
+        *{
+            margin: 10px;
+            padding: 0;
+        }
+        div{
+            /* display: inline;       Converting Block Element to Inline Element */
+            border: 2px solid red ; /*On Block Elements Padding,Margin and Height can be applied*/
+            width: 300px;             /*Width covers the whole viewport*/
+            margin: 25px;             
+            padding: 50px;
+        }
+        span{
+            border: 2px solid green ; /*On Inline Elements Vertical Margin,Width and Height cannot be applied*/
+            width: 300px;               /*Only Horizontal Margin can be Applied*/
+            height: 200px;              /*Width adjusts according to the content*/
+            margin: 5px;
+            padding: 5px;
+            display: inline-block;      /*Inline-Block Element->It acts as Inline Element but custom width,height,margin and padding is allowed*/
+            /* display: block;          Converting Inline Element to Block Element*/
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div>
+        Welcome to CodeHelp
+    </div>
+
+    <div>
+        Welcome to CodeHelp 2.0
+    </div> -->
+
+    <span>
+        This is a Aggarwal 
+    </span> 
+
+    <span>
+        This is a Aggarwal 2.0
+    </span>
+
+</body>
+</html>
